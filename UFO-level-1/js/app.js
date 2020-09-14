@@ -1,18 +1,13 @@
 // from data.js
 // this is the source
 var tableData = data;
-// create the destination
+// create the destination (this is the html)
 var tbody = d3.select("tbody");
 
-// YOUR CODE HERE!
-// console.log data from data.js
-// console.log(data);
+// console.log tableData from data.js
+console.log(tableData);
 
 // loop through data and console.log the array
-// data.forEach(function(alienSightings) {
-//     console.log(alienSightings);
-// });
-
 // start transfering the data, iterate through the source
 // use d3 to push one table row to alienSightings object and object entries to see key and values
 data.forEach(function(alienSightings) {
@@ -25,15 +20,11 @@ data.forEach(function(alienSightings) {
     });  
 });   
 
+// create button to filter through dates
 // var btnRef = document.getElementById("filter-btn");
 // btnRef.addEventListener("click", function(){
 //     alert("Finally!!!")
 // });
 // console.log(btnRef);
 
-
-
-
-var body = d3.select("body");
-console.log(body)
 
