@@ -26,7 +26,7 @@ tableData.forEach(function(alienSightings) {
 var button = d3.select("#filter-btn");
 // use button on and create a function
 button.on("click", function() {
-    // call on the html to link to the data and print in the destination
+    // call on the html to link to the data and print in the destination, wipe it clean
     tbody.html("");
     // create an element to stop the page from refreshing
     d3.event.preventDefault();
@@ -41,13 +41,13 @@ button.on("click", function() {
     // create filter with datetime equal to the inputValue
     var filterData = tableData.filter(ufo => ufo.datetime === inputValue);
     // console log the filter data
-    console.log(filterData);
+    console.log(filterData); 
 
     // use filterdata and create forEach like above to print out the filtered dates in the webpage
-    filterData.forEach(function(selections) {
-        console.log(selections);
+    filterData.forEach(function(filterDate) {
+        console.log(filterDate);
         var row = tbody.append("tr");
-        Object.entries(selections).forEach(function([key, value]) {
+        Object.entries(filterDate).forEach(function([key, value]) {
         console.log(key, value);
         var cell = row.append("td");
         cell.text(value);
