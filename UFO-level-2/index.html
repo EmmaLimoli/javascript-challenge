@@ -1,54 +1,54 @@
+<!-- add back in static, was having issues with finding the files -->
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
   <meta charset="utf-8">
-  <title>UFO Finder</title>
+  <title>Discover What's Out There</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
-
-<body>
+<body style="background-color: black;">
   <div class="wrapper">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">UFO Sightings
-            <img class="nav-ufo" src="static/images/ufo.svg">
-          </a>
+          <a class="navbar-brand" style="font-size: 40px; color: whitesmoke;" href="index.html">Welcome To UFO Sightings</a>
         </div>
       </div>
     </nav>
     <div class="hero text-center">
-      <h1>UFO Sightings</h1>
-      <p>The Truth is Out There</p>
-    </div>
+      <h1 style="color: whitesmoke;">The Truth Is Out There</h1>
+      <br></br>
+      <p style="color: whitesmoke;">Search for UFO sightings to discover what the governement has known all along.</p>
     <div class="container">
       <div class="row margin-top-50">
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
+              <div class="panel-heading" style="color: whitesmoke">Please Enter Data To Filter Your Search</div>
               <div class="panel-body">
                 <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <!-- change label to make it all inclusive -->
+                        <label for="search">Enter Your Search</label>
+                        <!-- change input to make it all inclusive instead of just date -->
+                        <input class="form-control" id="search-data" type="text">
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                  <button id="filter-btn" type="button" class="btn btn-default" style="color: whitesmoke">Filter Out The Lies!</button>
                 </form>
               </div>
             </div>
           </aside>
         </div>
         <div class="col-md-10">
-          <div id="table-area" class="">
+          <div id="table-area" class="table table-light">
             <table id="ufo-table" class="table table-striped">
               <thead>
                 <tr>
@@ -71,9 +71,11 @@
       <span class="bottom">UFO Sightings</span>
     </footer>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="static/js/data.js"></script>
-  <script src="static/js/app.js"></script>
 </body>
+<script src="static/js/data.js"></script>
+<script src="static/js/app.js"></script>
 
 </html>
+
+
+     
