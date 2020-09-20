@@ -35,7 +35,7 @@ button.on("click", function() {
 
     // use the value property of the input element
     var inputValue = inputElement.property("value");
-    // consol.log inputValue and tableData to make sure it's working
+    // console.log inputValue and tableData to make sure it's working
     console.log(inputValue);
     console.log(tableData);
 
