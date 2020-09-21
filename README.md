@@ -35,3 +35,5 @@ Lastly, I called on filterData again to create a forEach loop function and repea
 <strong>What Was Difficult:</strong>
 What I found difficult about this assignment was understanding how the data was being linked to the the HTML doc. The real key to the code was using tbody.html("") because that's what made the filtered data print out not in the console log, but the HTML doc and resets it. I also had difficulties with the filtering and the folder finding. For whatever reason, initially my docs weren't found in static in the first part, so I got rid of it and it worked fine. Then in the second part, finding the image didn't work, so I changed it up a bit to get it to cooperate. As for the filtering, it was easier to use the classwork, but it did take me awhile to get everything little thing working. 
 
+<strong>Tools Used: HTML, CSS, JavaScript</strong>
+
