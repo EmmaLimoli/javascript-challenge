@@ -1,5 +1,5 @@
 # javascript-challenge
-<h1>Creating A Filter For Search On A Webpage</h1>
+<h1>Search On A Webpage</h1>
 
 <strong>The Goal:</strong> 
 In this project, the goal is to create a webpage that has HTML, CSS, and JavaScript. The webpage is to have search and filter capabilities. A user can filter through a table of data based on the date or other requirements such as country or state.
